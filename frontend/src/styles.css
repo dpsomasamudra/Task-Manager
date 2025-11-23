@@ -1,0 +1,60 @@
+:root {
+  --tm-primary: #0ea5e9;
+  --tm-primary-700: #0284c7;
+  --tm-accent: #10b981;
+  --tm-danger: #ef4444;
+}
+
+body {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 60%, #ffffff 100%);
+  color: #0f172a;
+}
+
+.tm-header {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border-bottom: 1px solid rgba(2, 6, 23, 0.06);
+}
+
+.tm-card {
+  background: #ffffff;
+  border: 1px solid rgba(2, 6, 23, 0.08);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.tm-btn-primary {
+  background: linear-gradient(90deg, var(--tm-primary) 0%, var(--tm-primary-700) 100%);
+  color: white;
+  border: none;
+}
+.tm-btn-primary:hover { filter: brightness(1.05); }
+
+.tm-badge-overdue { background: var(--tm-danger); }
+
+.tm-list-item { transition: transform 180ms ease, box-shadow 180ms ease; }
+.tm-list-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.tm-desc {
+  max-width: 36ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tm-table { background: #ffffff; }
+.tm-table thead { background: #f8fafc; }
+.tm-table tbody tr:hover { background: #f1f5f9; }
+
+.tm-input, .tm-select, .tm-textarea {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid rgba(2, 6, 23, 0.12);
+}
+.tm-input:focus, .tm-select:focus, .tm-textarea:focus {
+  border-color: var(--tm-accent);
+  box-shadow: 0 0 0 .25rem rgba(6, 182, 212, .2);
+}
